@@ -17,4 +17,11 @@ func main() {
 
 	deckSize = 52
 	fmt.Println(deckSize)
+
+	card3 := newCard()
+	fmt.Println(card3)
+}
+
+func newCard() string {
+	return "Five of Diamonds"
 }
