@@ -20,6 +20,8 @@ func main() {
 
 	card3 := newCard()
 	fmt.Println(card3)
+
+	printState()
 }
 
 func newCard() string {
