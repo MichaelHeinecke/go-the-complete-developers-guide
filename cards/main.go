@@ -22,6 +22,20 @@ func main() {
 	fmt.Println(card3)
 
 	printState()
+
+	// Slice
+	cards := []string{"Ace of Diamonds", newCard()}
+	// append returns a new slice rather than modifying the existing one
+	cards = append(cards, "Six of Spades")
+	fmt.Println(cards)
+
+	for index, card := range cards {
+		fmt.Println(index, card)
+	}
+
+	for _, card := range cards {
+		fmt.Println(card)
+	}
 }
 
 func newCard() string {
