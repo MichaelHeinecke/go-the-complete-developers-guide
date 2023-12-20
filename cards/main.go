@@ -10,4 +10,6 @@ func main() {
 	hand, remainingCards := deal(cards, 5)
 	hand.print()
 	remainingCards.print()
+
+	hand.saveToFile("my-hand")
 }
