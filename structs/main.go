@@ -13,6 +13,13 @@ type person struct {
 	contact   contactInfo
 }
 
+// equivalent to above code
+type person2 struct {
+	firstName   string
+	lastName    string
+	contactInfo // declares both, field name and type
+}
+
 func main() {
 	alex := person{"Alex", "Anderson", contactInfo{}}
 	peter := person{firstName: "Peter", lastName: "Parker"}
